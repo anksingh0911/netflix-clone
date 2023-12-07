@@ -7,6 +7,12 @@
 -SignIn signUP
 -Form validation
 -useRef hooks
+-Firebase setup
+-Deploying app to firebase.
+-Create signUp user account
+-Implement SignIn through firebase api
+-Implement Sign out
+-update profile 
 
 
 # Features
