@@ -12,8 +12,12 @@
 -Create signUp user account
 -Implement SignIn through firebase api
 -Implement Sign out
--update profile 
-
+-Update profile 
+-Bugfix: Sign up user display name and profile picture update
+-Bugfix: If the user is not logged in redirect /browse to login page and vice versa.
+-Unsubscribe to onAuthStateChange callback
+-Integrate TMDB apis
+-Create movies store
 
 # Features
 -Login /signUp
