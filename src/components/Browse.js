@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import useNowPlayingMovies from '../hooks/useNowPlayingMovies'
 import usePopularMovies from '../hooks/usePopularMovies';
+import usePopularSeries from '../hooks/usePopularSeries';
 import useTopRatedMovies from '../hooks/useTopRatedMovies';
 import useUpcomingMovies from '../hooks/useUpcomingMovies';
 import Header from './Header'
@@ -13,6 +14,7 @@ const Browse = () => {
   usePopularMovies();
   useTopRatedMovies();
   useUpcomingMovies();
+  usePopularSeries();
   const moviesData = useSelector((store)=> store?.movies?.nowPlayingMovies);
   if(!moviesData) return null;
   return (
