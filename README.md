@@ -18,6 +18,18 @@
 -Unsubscribe to onAuthStateChange callback
 -Integrate TMDB apis
 -Create movies store
+-Create constants file for creating hardcoaded variables
+-Register TMDB API & create an app and get access-token
+-Get data from TMDB API
+-Creating custom hooks for getting movie list
+-Create movie slices
+-Update store with movie data
+-Planning and MainContainer and secondary container
+-Fetch data from trailer videos
+
+
+
+-GPT search features
 
 # Features
 -Login /signUp
