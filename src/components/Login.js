@@ -10,7 +10,7 @@ import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { user_avatar } from "../utils/constant";
+import {bg_url, user_avatar } from "../utils/constant";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -83,7 +83,7 @@ const Login = () => {
       <div
         className='w-full h-[100vh] 
     bg-cover	bg-no-repeat flex items-center justify-center
-    bg-[url("https://assets.nflxext.com/ffe/siteui/vlv3/77d35039-751f-4c3e-9c8d-1240c1ca6188/02b64fbf-58a4-4f95-ad71-aca28d902936/AE-en-20231106-popsignuptwoweeks-perspective_alpha_website_large.jpg")]'
+    bg-[image:var(--bg_url)]'
       >
         <form
           onSubmit={(e) => e.preventDefault()}

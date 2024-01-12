@@ -17,12 +17,16 @@ const Browse = () => {
   useUpcomingMovies();
   usePopularSeries();
   const moviesData = useSelector((store)=> store?.movies?.nowPlayingMovies);
+  const showGpt = useSelector((store)=> store?.gpt?.showGptSearch);
+  console.log(showGpt, 'showGPT');
+
   if(!moviesData) return null;
   return (
     <>
       <Header/>
-      <GPTSearch/>
-      <div>
+      {showGpt ? <GPTSearch/> : (
+      
+      <>
         <MainContainer/>
         <SecondaryContainer/>
         {/* 
@@ -34,7 +38,8 @@ const Browse = () => {
               -cards * n
           
         */}
-      </div>
+      </>
+      ) }
     </>
   )
 }
