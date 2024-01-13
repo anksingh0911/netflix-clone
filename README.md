@@ -26,6 +26,10 @@
 -Update store with movie data
 -Planning and MainContainer and secondary container
 -Fetch data from trailer videos
+-GPT search page
+-GPT search bar and search suggestion component
+-GET open ai API key
+-Integrate Open ai api for search.
 
 
 

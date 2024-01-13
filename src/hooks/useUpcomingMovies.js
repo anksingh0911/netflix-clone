@@ -12,7 +12,6 @@ const useUpcomingMovies = ()=>{
   const getUpcomingMovies = async()=>{
     const upcomingMovies = await fetch("https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1", api_options);
     const data = await upcomingMovies.json()
-    console.log(data, 'data')
     dispatch(addUpcomingMovies(data?.results))
   }
 }

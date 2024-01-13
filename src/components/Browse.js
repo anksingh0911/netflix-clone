@@ -18,14 +18,12 @@ const Browse = () => {
   usePopularSeries();
   const moviesData = useSelector((store)=> store?.movies?.nowPlayingMovies);
   const showGpt = useSelector((store)=> store?.gpt?.showGptSearch);
-  console.log(showGpt, 'showGPT');
 
   if(!moviesData) return null;
   return (
     <>
       <Header/>
       {showGpt ? <GPTSearch/> : (
-      
       <>
         <MainContainer/>
         <SecondaryContainer/>
@@ -36,7 +34,6 @@ const Browse = () => {
           Secondary Container
             -MovieList * n
               -cards * n
-          
         */}
       </>
       ) }

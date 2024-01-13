@@ -77,17 +77,16 @@ const Login = () => {
     }
   };
   return (
-    <>
+    <div>
       <Header />
 
-      <div
-        className='w-full h-[100vh] 
-    bg-cover	bg-no-repeat flex items-center justify-center
-    bg-[image:var(--bg_url)]'
-      >
+        <div className='absolute'>
+          <img src={bg_url} alt="BackgroundImage"/>
+        </div>
+        <div className="absolute flex justify-center left-0 right-0">
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="p-5 lg:w-[22%] md:w-4/12 sm:w-[60%] w-[60%] bg-black rounded-lg bg-opacity-80"
+          className="mt-[15%] p-5 lg:w-[22%] md:w-4/12 sm:w-[60%] w-[60%] bg-black rounded-lg bg-opacity-80 "
         >
           <h1 className="text-2xl mb-3 text-center text-white font-semibold ">
             {" "}
@@ -138,8 +137,8 @@ const Login = () => {
               : "Already user ? Sign In"}
           </p>
         </form>
-      </div>
-    </>
+        </div>
+    </div>
   );
 };
 
