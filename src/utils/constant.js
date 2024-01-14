@@ -9,4 +9,3 @@ export const api_options = {
   }
 }
 export const IMG_CDN = "https://image.tmdb.org/t/p/w200";
-export const GPT_API_KEY= "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";
