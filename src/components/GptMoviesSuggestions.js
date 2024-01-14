@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 
 const GptMoviesSuggestions = () => {
   const {moviesNames, searchedMovies} =  useSelector((store)=> store?.gpt);
-  
+  if(!searchedMovies && !moviesNames) return null
   return (
     <div className="bg-black/70 w-[70%] m-auto rounded-md p-2 pb-4 mt-3 z-10 ">
       <p className="text-xl text-center font-semibold m-3 text-white">Search result for movie {moviesNames[0]}</p>
