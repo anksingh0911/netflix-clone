@@ -35,17 +35,14 @@ const Header = () => {
     return ()=>unsubscribe()
   },[])
 
+    
   const handleGptToggleClick = ()=>{
     dispatch(gptToggleSearchView())
   }
 
   return (
     <div className='absolute w-full flex justify-between px-8 py-2 bg-gradient-to-b from-black z-10'>
-      <img 
-        className='w-40'
-        src={logo} 
-        alt='Logo'
-      />
+      <img className='w-40' src={logo} alt='Logo'/>
       {user && (
         <div className="flex items-center">
           <button className="p-1 bg-red-700 rounded-md text-md text-white mx-2"
@@ -53,9 +50,8 @@ const Header = () => {
           >
             GPT Search
           </button>
-          <img className="w-[40px] h-[40px] rounded-[40px] mr-3" src={user.photoURL} alt="userImage"/>
-          <p className="text-white text-sm mr-2">{user.displayName}</p>
-          <button className='text-sm text-white' onClick={handleClick}>Sign out</button>
+          <img className="w-[40px] h-[40px] rounded-[40px] mr-3" src={user?.photoURL} alt="userImage"/>
+          
         </div>
       )} 
     </div>
